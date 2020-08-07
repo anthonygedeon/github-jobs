@@ -1,0 +1,9 @@
+.container {
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media only screen and (min-width: 860px) {
+        max-width: 80%;
+    }
+}
