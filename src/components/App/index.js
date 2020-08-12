@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from '../../pages/Home';
 import JobContent from '../../pages/jobContent';
 import Header from '../Header/index';
+import Content from '../Content/index';
 import './styles.scss';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
 			<div className="App">
 				<div className="container">
 					<Header />
+					<Content />
 				</div>
 			</div>
 

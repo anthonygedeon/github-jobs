@@ -1,0 +1,74 @@
+.job-post {
+    display: flex;
+    padding: 1em;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    color: #334680;
+    margin-bottom: 2em;
+
+    &__image {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 4px;
+        margin-right: 1em;
+    }
+
+    .MuiSvgIcon-root {
+        fill: #B9BDCF;
+        margin-right: 0.25em;
+    }
+
+    &__company-name {
+        margin: 0;
+        font-weight: 700;
+    }
+
+    &__position {
+        font-weight: 500;
+        margin: 0.75em 0;
+        font-size: 1.25rem;
+    }
+
+
+    &__full-time {
+        margin-bottom: 0;
+        border: 1px solid black;
+        border-radius: 4px;
+        background-color: transparent;
+        padding: 0.5em;
+        cursor: pointer;
+    }
+
+    &__details{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @media screen and (min-width: 860px) {
+            flex-direction: row;
+        }
+    }
+
+    &__posting {
+        display: flex;
+        align-self: flex-end;
+    }
+
+    &__location-wrapper {
+        margin-right: 1em;
+    }
+
+    &__location-wrapper,
+    &__timestamp-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__timestamp,
+    &__location {
+        color: #B9BDCF;
+    }
+
+}
