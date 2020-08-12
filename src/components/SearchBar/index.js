@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './styles.scss';
-import WorkOutlineIcon from '@material-ui/icons/WorkOutlined';
+import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
 
 const SearchBar = () => {
 

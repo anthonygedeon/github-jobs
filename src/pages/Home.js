@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 
 const Home = () => {
 
-    return (
-        <p>Home</p>
-    )
+    return <></>
 };
 
 export default Home;

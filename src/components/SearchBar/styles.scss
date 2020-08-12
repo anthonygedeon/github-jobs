@@ -15,7 +15,7 @@
     width: 100%;
     max-width: 80%;
     background-color: #fff;
-    padding: 0.25em;
+    padding: 0.25em 0.25em 0.25em 1em;
     border-radius: 4px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 
@@ -23,11 +23,16 @@
     justify-content: space-between;
     align-items: center;
 
+    .MuiSvgIcon-root {
+        fill: #B9BDCF;
+    }
+
     &__input {
         border: none;
         background-color: transparent;
         text-overflow: ellipsis;
-        width: 170px;
+        width: 130px;
+        margin-left: 1em;
 
         &::placeholder {
             color: #B9BDCF;
