@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
+import { JobPostsContext } from '../providers/JobPostsContext';
 
-const JobContent = () => {
+const JobContent = ({ match }) => {
 
     return (
-        <p>JobContent</p>
+        <JobPostsContext.Consumer>
+            {(context) => {
+                const job = context.company.filter(job => job.id === match.params.job)
+                console.log(job.how_to_apply, job.description)
+            }}
+        </JobPostsContext.Consumer>
     )
 };
 

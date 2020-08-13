@@ -2,22 +2,16 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from '../../pages/Home';
 import JobContent from '../../pages/jobContent';
-import Header from '../Header/index';
-import Content from '../Content/index';
+import { JobPostsProvider } from '../../providers/JobPostsContext';
 import './styles.scss';
 
 function App() {
 	return (
 		<Router>
-			<div className="App">
-				<div className="container">
-					<Header />
-					<Content />
-				</div>
-			</div>
-
-			<Route exact path="/" component={Home} />
-			<Route exact path="/:job" component={JobContent} />
+			<JobPostsProvider>
+				<Route exact path="/" component={Home} />
+				<Route exact path="/:job" component={JobContent} />
+			</JobPostsProvider>
 		</Router>
 	);
 }
