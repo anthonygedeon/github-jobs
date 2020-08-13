@@ -7,6 +7,7 @@
 
 	@media screen and (min-width: 860px) {
 		flex-direction: row;
+		justify-content: space-between;
 
 		&__left {
 			width: 20%;
@@ -14,7 +15,7 @@
 		}
 
 		&__right {
-            width: 68%;
+            width: 70%;
 		}
 	}
 }
